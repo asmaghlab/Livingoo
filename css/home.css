@@ -1,0 +1,261 @@
+
+
+* {
+  --main-color: #a0804d !important;
+  --secondry-color: black !important;
+  --hover: #cf9a61 !important;
+  --hover-btn: rgb(47, 46, 46) !important;
+}
+
+
+#carouselExampleIndicators {
+  z-index: -1 !important;
+}
+
+
+.carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: linear-gradient(#a47148, #82673d);
+}
+
+#carouselExampleIndicators .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  background: rgb(219, 217, 217);
+}
+
+#carouselExampleIndicators .carousel-indicators .active {
+  background: var(--hover) !important;
+}
+
+.button-all {
+  background-color: var(--secondry-color) !important;
+}
+
+.button-all:hover {
+  background-color: var(--hover-btn) !important;
+}
+
+.button-cart {
+  background-color: #a0804d !important;
+}
+
+.button-cart:hover {
+  background-color: var(--hover) !important;
+}
+
+
+.btnc {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btnc i {
+  color: var(--secondry-color) !important;
+}
+
+
+
+.product-card {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #f0f0f0;
+  gap: 8px !important;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-actions {
+  top: 15px;
+  right: 15px;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product-card:hover .product-actions {
+  opacity: 1;
+}
+
+.product-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.product-actions button {
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  transition: all .3s ease-in-out;
+}
+
+.product-actions button:hover {
+  background-color: #db4444;
+  border-color: #db4444;
+  color: white;
+  fill: white !important;
+}
+
+#productCarousel {
+  margin: 0 4rem;
+}
+
+
+#cat {
+  position: relative;
+}
+
+#cat::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -25px;
+  height: 35px;
+  width: 18px;
+  background: var(--main-color);
+  border-radius: 5px;
+}
+
+.category-box:hover {
+  background-color: var(--hover-btn) !important;
+  color: white !important;
+}
+
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+
+
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+
+.loader {
+  display: flex;
+  gap: 0.6rem;
+}
+
+
+.circle {
+  width: 16px;
+  height: 16px;
+  background-color: #a0804d;
+  
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+
+.circle.delay1 {
+  animation-delay: 0.3s;
+}
+
+.circle.delay2 {
+  animation-delay: 0.6s;
+}
+
+
+@keyframes bounce {
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.7;
+  }
+
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-item {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(6px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out,
+    filter 0.7s ease-out;
+  will-change: opacity, transform, filter;
+}
+
+.loaded .fade-item {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+
+
+.fade-item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.fade-item:nth-child(2) {
+  transition-delay: 0.45s;
+}
+
+.fade-item:nth-child(3) {
+  transition-delay: 0.7s;
+}
+
+.fade-item:nth-child(4) {
+  transition-delay: 0.95s;
+}
+
+.fade-item:nth-child(5) {
+  transition-delay: 1.2s;
+}

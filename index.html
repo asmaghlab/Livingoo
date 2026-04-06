@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livingo-Home</title>
+    <script src="js/components.js" defer></script>
+    <link rel="stylesheet" href="css/components.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.1.1/iconify.min.js"
+        integrity="sha512-oQ1yQwSEIc9CTcK7pffEyS8fxom2iUWQrALk3j3+wfdSDjQ77EZbzGMGe2ZYmfoC8M9vR47apbS1ZYbW05y/pg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <style>
+        .glowing-circle {
+            border-radius: 50%;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.7),
+                0 0 50px rgba(255, 200, 150, 0.4);
+        }
+    </style>
+
+<body class="fade-item overflow-x-hidden">
+    <div id="loading-overlay">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle delay1"></div>
+            <div class="circle delay2"></div>
+        </div>
+    </div>
+
+    <div id="navbar" class="fade-item"></div>
+
+    <section id="carouselExampleIndicators"
+        class="carousel slide container-sm-fluid min-vh-50 d-flex align-items-center"
+        style="background-color:var(--main-color); min-height:60vh;" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row align-items-center h-100 w-100" style="min-height: 50vh;">
+                    <div class="col-6 mobile-text-col">
+                        <div class="carousel-caption text-start position-relative">
+                            <h1 class="text-white mb-3">Modern Nightstand</h1>
+                            <div id="shop1"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 mobile-img-col d-flex justify-content-center align-items-center p-3">
+                        <img src="./assets/images/products/Bedroom/nightstand1.jpg" class="w-50 glowing-circle"
+                            alt="Modern Beige Bed">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row align-items-center h-100" style="min-height: 50vh;">
+                    <div class="col-6 mobile-text-col">
+                        <div class="carousel-caption text-start position-relative">
+                            <h1 class="text-white mb-3">Modern Dining Chair</h1>
+                            <div id="shop2"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 mobile-img-col d-flex justify-content-center align-items-center p-3">
+                        <img src="./assets/images/products/dining-room/chair1.jpg" class="w-50 glowing-circle"
+                            alt=" Modern Beige Bed">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row align-items-center h-100" style="min-height: 50vh;">
+                    <div class="col-6 mobile-text-col">
+                        <div class="carousel-caption text-start position-relative">
+                            <h1 class="text-white mb-3">Golden Modern Mirror</h1>
+                            <div id="shop3"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 mobile-img-col d-flex justify-content-center align-items-center p-3">
+                        <img src="./assets/images/products/lighting-decor/mirror1.jpg" class="w-50 glowing-circle"
+                            alt="Modern Beige Bed">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row align-items-center h-100" style="min-height: 50vh;">
+                    <div class="col-6 mobile-text-col">
+                        <div class="carousel-caption text-start position-relative">
+                            <h1 class="text-white mb-3">Wall-Mounted TV</h1>
+                            <div id="shop4"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 mobile-img-col d-flex justify-content-center align-items-center p-3">
+                        <img src="./assets/images/products/living-room/tv-unite1.jpg" class="w-50 glowing-circle"
+                            alt="Modern Beige Bed">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row align-items-center h-100" style="min-height: 50vh;">
+                    <div class="col-6 mobile-text-col">
+                        <div class="carousel-caption text-start position-relative">
+                            <h1 class="text-white mb-3">Modern Desk Office</h1>
+                            <div id="shop5"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 mobile-img-col d-flex justify-content-center align-items-center p-3">
+                        <img src="./assets/images/products/office/desk2.jpeg" class="w-50 glowing-circle"
+                            alt="Modern Beige Bed">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row align-items-center h-100" style="min-height: 50vh;">
+                    <div class="col-6 mobile-text-col">
+                        <div class="carousel-caption text-start position-relative">
+                            <h1 class="text-white mb-3">Modern Dark Patio</h1>
+                            <div id="shop6"></div>
+                        </div>
+                    </div>
+                    <div class="col-6 mobile-img-col d-flex justify-content-center align-items-center p-3">
+                        <img src="./assets/images/products/out-door/patio1.jpeg" class="w-50 glowing-circle"
+                            alt="Modern Beige Bed">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mt-3 mt-lg-5 px-1" class="fade-item">
+        <div class="row my-4">
+            <div class="col-12 text-start ms-4">
+                <p style="color: var(--main-color)" id="cat">Categories</p>
+            </div>
+        </div>
+        <div class="row">
+            <p class="fs-3" style="color:var(--secondry-color)">Browse By Categories</p>
+        </div>
+        <div class="row g-3  text-center">
+            <div class="col-12 col-md-4 col-lg-2">
+                <a href="categories/Lighting-Decor/lighting.html" class="text-dark text-decoration-none">
+                    <div class="border rounded p-3 category-box ">
+                        <img src="./assets/images/categories/roof-lamp.png" class="img-fluid mb-2" style="width:40px">
+                        <p class="mb-0">Lighting Room</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-2">
+                <a href="categories/Dining Room/diningroom.html" class="text-dark text-decoration-none">
+                    <div class="border rounded p-3 category-box">
+                        <img src="./assets/images/categories/table.png" class="img-fluid mb-2" style="width:40px">
+                        <p class="mb-0">Dinning Room</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <a href="categories/Living Room/livingroom.html" class="text-dark text-decoration-none">
+                    <div class="border rounded p-3 category-box">
+                        <img src="./assets/images/categories/living-room.png" class="img-fluid mb-2" style="width:40px">
+                        <p class="mb-0">Living Room</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <a href="categories/Bedroom/bedroom.html" class="text-dark text-decoration-none">
+                    <div class="border rounded p-3 category-box">
+                        <img src="./assets/images/categories/double-bed.png" class="img-fluid mb-2" style="width:40px">
+                        <p class="mb-0">Bedroom</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <a href="categories/Office/office.html" class="text-dark text-decoration-none">
+                    <div class="border rounded p-3 category-box">
+                        <img src="./assets/images/categories/workspace.png" class="img-fluid mb-2" style="width:40px">
+                        <p class="mb-0">Office</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-2">
+                <a href="categories/Outdoor/outdoor.html" class="text-dark text-decoration-none">
+                    <div class="border rounded p-3 category-box">
+                        <img src="./assets/images/categories/garden.png" class="img-fluid mb-2" style="width:40px">
+                        <p class="mb-0">Outdoor</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container my-4" class="fade-item">
+
+        <div class="position-relative mb-4 d-flex justify-content-between align-items-end">
+            <div>
+                <div class=" mb-4  ms-4" style="color: var(--main-color);" id="cat">This Month</div>
+                <p class="fs-3" style="color:var(--secondry-color)">Best Selling Products</p>
+            </div>
+            <a href="shop.html" class="text-decoration-none text-light button-all btn  px-5 py-3">View
+                All</a>
+        </div>
+        <div class="position-relative d-flex align-items-center">
+            <button class="position-absolute start-0 top-50 translate-middle-y me-3 btnc" type="button"
+                data-bs-target="#productCarousel" data-bs-slide="prev">
+                <i class="bi bi-chevron-left fs-3 text-warning"></i>
+            </button>
+
+            <div id="productCarousel" class="carousel slide flex-grow-1" data-bs-ride="carousel">
+                <div class="carousel-inner" id="product-list"></div>
+            </div>
+            <button class=" position-absolute end-0 top-50 translate-middle-y ms-3 btnc" type="button"
+                data-bs-target="#productCarousel" data-bs-slide="next">
+                <i class="bi bi-chevron-right fs-3 text-warning"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="fade-item">
+        <div class="container my-4">
+
+            <div class="position-relative mb-4 d-flex justify-content-between align-items-end">
+                <div>
+                    <div class=" mb-4  ms-4" style="color:var(--main-color)" id="cat">Our Products</div>
+                    <p class="fs-3" style="color:var(--secondry-color)">Explore Our Products</p>
+                </div>
+            </div>
+        </div>
+        <div class=" container">
+            <div class="row g-4" id="product-container">
+
+            </div>
+            <div class="d-flex justify-content-center align-middle mb-3 mt-2  ">
+                <a href="shop.html" class="text-decoration-none text-light button-all btn  px-5 py-3 m-3">View All
+                    Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-4 fade-item">
+        <div class="position-relative mb-4 d-flex justify-content-between align-items-end">
+            <div>
+                <div class="mb-4 ms-4" style="color:var(--main-color)" id="cat">Featured</div>
+                <p class="fs-3" style="color:var(--secondry-color)">New Arrival</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 col-lg-6 mb-3">
+                <div class="card h-100 text-white position-relative mb-2">
+                    <img src="./assets/images/products/Bedroom/bed3.jpg" alt="Bedroom"
+                        class="h-100 w-100 object-fit-cover" />
+                    <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                        <h3 class="card-title h4 fw-bold">Bedroom</h3>
+                        <p class="card-text">Luxurious neutral bedroom with crystal chandelier.</p>
+                        <div id="shopnow1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="row g-4">
+
+                    <div class="col-12">
+                        <div class="card bg-dark text-white position-relative h-100 border-0 overflow-hidden">
+                            <img src="./assets/images/products/dining-room/diningTable3.jpeg" alt="Dining Table"
+                                class="card-img h-100 object-fit-cover">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                                <h5 class="fw-bold">Dining Table</h5>
+                                <p class="small">Modern dining room featuring live-edge wood table and leather chairs.
+                                </p>
+                                <div id="shopnow2"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-dark text-white position-relative h-100 border-0 overflow-hidden">
+                            <img src="./assets/images/products/dining-room/chair3.jpg" alt="Chair"
+                                class="card-img h-100 object-fit-cover">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                                <h6 class="fw-bold">Chair</h6>
+                                <p class="small">Modern wooden accent chair.</p>
+                                <div id="shopnow3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-dark text-white position-relative h-100 border-0 overflow-hidden">
+                            <img src="./assets/images/products/living-room/sofa1.jpg" alt="Sofa"
+                                class="card-img h-100 object-fit-cover">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+                                <h6 class="fw-bold">Sofa</h6>
+                                <p class="small">Beige sectional sofa couch.</p>
+                                <div id="shopnow4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-5 bg-light " class="fade-item">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3" style="color: var(--main-color)">About <span
+                            style="color: var(--secondry-color);">Our Store</span></h2>
+                    <p class="text-muted">
+                        Welcome to <strong>Livingo</strong>, your one-stop destination for modern and stylish home
+                        furniture.
+                        We believe that every home deserves comfort, beauty, and functionality.
+                        From bedrooms and living rooms to outdoor spaces, we curate collections that combine luxury and
+                        practicality at the best value.
+                    </p>
+                    <p class="text-muted">
+                        Our mission is simple: to make your dream home a reality by offering carefully selected
+                        furniture that fits every lifestyle.
+                    </p>
+                    <a href="#" class="btn px-4 rounded-pill text-white"
+                        style="background-color: var(--secondry-color); ">Learn More</a>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="assets/images/mainImg/download.jpeg " style="height: 500px;" alt="About Us"
+                        class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 text-light pb-5 mb-md-5" style="background-color: var(--main-color)"
+        class="fade-item">
+        <div class="container">
+            <div class="row mb-4 text-center">
+                <h2 class="fw-bold">Get in <span style="color: var(--secondry-color);">Touch</span></h2>
+                <p class="text-muted">We’d love to hear from you! Whether you have a question, feedback, or just want to
+                    say hi.</p>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="iconify fs-3 me-3" style="color: var(--secondry-color);"
+                            data-icon="mdi:map-marker"></span>
+                        <div>
+                            <h6 class="fw-bold">Our Address</h6>
+                            <p class="mb-0 text-muted">123 Modern Street, Cairo, Egypt</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="iconify fs-3 me-3" style="color: var(--secondry-color);"
+                            data-icon="mdi:phone"></span>
+                        <div>
+                            <h6 class="fw-bold">Call Us</h6>
+                            <p class="mb-0 text-muted">+20 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <span class="iconify fs-3 me-3" style="color: var(--secondry-color);"
+                            data-icon="mdi:email"></span>
+                        <div>
+                            <h6 class="fw-bold">Email Us</h6>
+                            <p class="mb-0 text-muted">support@livingo.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control rounded-3" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control rounded-3" id="contactEmail"
+                                    placeholder="Your Email" required readonly>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control rounded-3" placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <textarea rows="4" class="form-control rounded-3" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center align-middle">
+                                <button type="submit" class="btn px-5 py-2 text-white  m-3 \z\ rounded-pill"
+                                    style="background-color: var(--secondry-color);">Send a Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer" class="fade-item"></div>
+
+    <script src="./js/main.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

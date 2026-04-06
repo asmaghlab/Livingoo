@@ -1,0 +1,253 @@
+body,
+html {
+  height: 100%;
+  min-height: 100vh;
+  background: #fff;
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  overflow-x: hidden;
+}
+.login-page-wrap {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-panel {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  min-width: 370px;
+}
+form {
+  min-width: 340px;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  padding: 55px 40px 41px 40px;
+  border-radius: 0px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.subtitle {
+  color: #7b7b7b;
+  font-size: 1.03rem;
+  margin-bottom: 31px;
+  margin-top: 0;
+  margin-left: 5px;
+}
+.form-row {
+  width: 100%;
+  margin-bottom: 24px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  font-size: 1.07rem;
+  padding: 15px 2px 14px 2px;
+  border: none;
+  border-bottom: 1.5px solid #c7c7c7;
+  background: transparent;
+  margin-bottom: 2px;
+  transition: border 0.17s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 1.5px solid #a0804d !important;
+  outline: none;
+}
+.buttons-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  gap: 20px;
+}
+.login-btn {
+  background: #a0804d !important;
+  color: #fff;
+  font-size: 1.07rem;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 40px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.18s;
+}
+.login-btn:hover {
+  background: #82673d !important;
+  box-shadow: 5px 5px 5px black;
+}
+.forgot-link {
+  margin-left: 40px;
+  color: #a0804d !important;
+  text-decoration: none;
+  font-size: 1.05em;
+  align-self: center;
+  transition: text-decoration 0.2s;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+.error-msg {
+  color: #a0804d !important;
+  font-size: 1em;
+  min-height: 20px;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 900px) {
+  .login-page-wrap {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  .side-visual,
+  .login-panel {
+    width: 100vw;
+    min-width: unset;
+    padding: 0;
+  }
+  .side-visual {
+    width: 100vw;
+    min-width: unset;
+    
+    
+    height: auto;
+  }
+  .side-visual img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .login-panel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #fff;
+    padding: 24px 0;
+  }
+  form {
+    width: 94vw;
+    max-width: 350px;
+    padding: 35px 20px 30px 20px;
+  }
+  .forgot-link {
+    margin-left: 0;
+  }
+}
+
+.visual-image {
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+  max-height: 792px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+  background: #fff;
+}
+
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.side-visual {
+  animation: slideInLeft 0.8s cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s both;
+}
+
+.signup-panel,
+.login-panel {
+  animation: slideInRight 0.8s cubic-bezier(0.65, 0.05, 0.36, 1) 0.2s both;
+}
+
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 1.8px solid #a0804d !important;
+  background: #faf6f2;
+  transition: border 0.18s, background 0.22s;
+  outline: none;
+  transform: scale(1.03);
+  box-shadow: 0 2px 14px -13px #a0804d !important;
+}
+
+
+.signup-btn,
+.login-btn {
+  transition: background 0.18s, transform 0.13s;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+  animation: buttonPulse 0.26s cubic-bezier(0.65, 0.05, 0.36, 1);
+  background: #a0804d !important;
+}
+
+
+.dropdown-form input[type="radio"]:focus + label {
+  outline: 1.6px solid #a0804d !important;
+  outline-offset: 2px;
+}
+
+
+@media (max-width: 1100px) {
+  .side-visual {
+    animation: slideInLeft 0.7s cubic-bezier(0.65, 0.05, 0.36, 1) both;
+  }
+  .signup-panel,
+  .login-panel {
+    animation: slideInRight 0.7s cubic-bezier(0.65, 0.05, 0.36, 1) both;
+  }
+}
+.side-visual img {
+  transition: transform 0.35s cubic-bezier(0.65, 0.05, 0.36, 1), box-shadow 0.3s;
+}
+.side-visual img:hover {
+  transform: scale(1.025);
+  box-shadow: 0 4px 24px -10px #b0b0b0;
+}
