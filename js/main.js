@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <a href="./product.html?id=${product.id}">
                   <img src="${imagePath}" class="card-img-top" alt="${product.name}"
-                      onerror="this.src='https://via.placeholder.com/300x200?text=Image+Not+Found';">
+                      onerror="this.src='https://placehold.co/300x200?text=Image+Not+Found';">
                 </a>
                 <div class="card-body p-3">
                   <h6 class="card-title mb-3 border-bottom border-2 pb-1">${product.name}</h6>

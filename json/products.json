@@ -175,7 +175,7 @@
     "price": 1500,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/bed1.jpg"
+      "images/products/Bedroom/bed1.jpg"
     ],
     "stock": 5,
     "sellerId": "seller02",
@@ -189,7 +189,7 @@
     "price": 1400,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/bed2.jpg"
+      "images/products/Bedroom/bed2.jpg"
     ],
     "stock": 6,
     "sellerId": "seller02",
@@ -203,7 +203,7 @@
     "price": 1350,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/bed3.jpg"
+      "images/products/Bedroom/bed3.jpg"
     ],
     "stock": 4,
     "sellerId": "seller02",
@@ -217,7 +217,7 @@
     "price": 1450,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/bed4.jpg"
+      "images/products/Bedroom/bed4.jpg"
     ],
     "stock": 5,
     "sellerId": "seller02",
@@ -231,7 +231,7 @@
     "price": 850,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/dresser1.jpg"
+      "images/products/Bedroom/dresser1.jpg"
     ],
     "stock": 7,
     "sellerId": "seller02",
@@ -245,7 +245,7 @@
     "price": 900,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/dresser2.jpg"
+      "images/products/Bedroom/dresser2.jpg"
     ],
     "stock": 6,
     "sellerId": "seller02",
@@ -259,7 +259,7 @@
     "price": 920,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/dresser3.jpg"
+      "images/products/Bedroom/dresser3.jpg"
     ],
     "stock": 5,
     "sellerId": "seller02",
@@ -273,7 +273,7 @@
     "price": 880,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/dresser4.jpg"
+      "images/products/Bedroom/dresser4.jpg"
     ],
     "stock": 6,
     "sellerId": "seller02",
@@ -287,7 +287,7 @@
     "price": 450,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/nightstand1.jpg"
+      "images/products/Bedroom/nightstand1.jpg"
     ],
     "stock": 10,
     "sellerId": "seller02",
@@ -301,7 +301,7 @@
     "price": 480,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/nightstand2.jpg"
+      "images/products/Bedroom/nightstand2.jpg"
     ],
     "stock": 8,
     "sellerId": "seller02",
@@ -315,7 +315,7 @@
     "price": 520,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/nightstand3.jpg"
+      "images/products/Bedroom/nightstand3.jpg"
     ],
     "stock": 7,
     "sellerId": "seller02",
@@ -329,7 +329,7 @@
     "price": 540,
     "currency": "EGP",
     "images": [
-      "images/products/bedroom/nightstand4.jpg"
+      "images/products/Bedroom/nightstand4.jpg"
     ],
     "stock": 6,
     "sellerId": "seller02",
