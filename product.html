@@ -226,7 +226,7 @@
         document.getElementById("product-description").textContent =
           product.description;
         document.getElementById("product-image").src =
-          "../assets/" + product.images[0];
+          "assets/" + product.images[0];
         document.getElementById("product-stock").textContent =
           product.stock > 0 ? "In Stock" : "Out of Stock";
 
@@ -391,7 +391,7 @@
     <div class="col-lg-3 col-md-6 col-12 mb-4">
       <div class="card shadow-sm h-100">
         <a href="product.html?id=${p.id}">
-          <img src="../assets/${p.images[0]}" class="card-img-top explore-card-img" alt="${p.name}">
+          <img src="assets/${p.images[0]}" class="card-img-top explore-card-img" alt="${p.name}">
         </a>
         <div class="card-body">
           <h6 class="card-title">${p.name}</h6>
